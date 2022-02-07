@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d8dd195afb.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="search.css">
+  <title>Windbnb</title>
+</head>
+<body>
+  <!---==== Search: Start ====--->
+    <header>
+      <div class="logo">
+        <img src="recursos/logo.png" alt="logo">
+      </div>
+
+      <nav class="nav">
+        <div class="search">
+            <p id="geolocation">Everything</p>
+            <input type="text" placeholder="Add guest" id="search" autocomplete="off">
+            <label for="search"> 
+              <i class='bx bx-search'></i>
+            </label>
+        </div>
+      </nav>
+    </header>
+    <!---==== Search: End ====--->
+    
+    <!---==== Search Open: Start ====--->
+    <div class="options_conteiner">
+      <div class="options">
+        <div class="option">
+            <input type="text" placeholder="Location" id="location" autocomplete="off" value="Everything">
+  
+            <ul class="ul-country">
+                <li class="location"><i class="fas fa-map-marker-alt"></i>Helsinki, Finland</li>
+                <li class="location"><i class="fas fa-map-marker-alt"></i>Turku, Finland</li>
+                <li class="location"><i class="fas fa-map-marker-alt"></i>Oulu, Finland</li>
+                <li class="location"><i class="fas fa-map-marker-alt"></i>Vaasa, Finland</li>
+                <li class="location">Everything</li>
+            </ul>
+        </div>
+  
+        <div class="option">
+            <input type="text" placeholder="Guest" id="guest">
+  
+            <div class="guest">
+              <div class="adults">
+                  <h6>Adults</h6>
+                  <p>Ages 13 or adoves</p>
+  
+                  <div id="add-subtract_adult">
+                    <i class="far fa-minus-square guests adult"></i>
+                    <span class="adults_number">0</span> 
+                    <i class="far fa-plus-square guests plus adult"></i>
+                  </div>
+              </div>
+  
+              <div class="children">
+                  <h6>Childres</h6>
+                  <p>Ages 2-12</p>
+  
+                  <div id="add-subtract_children">
+                    <i class="far fa-minus-square guests children"></i>
+                    <span  class="children_number">0</span>   
+                    <i class="far fa-plus-square guests plus children"></i>
+                  </div>
+              </div>
+            </div>      
+        </div>
+
+        <div class="icon_search">
+          <i class='bx bx-search'></i>
+          <p>search</p>
+        </div>
+
+        <i class='bx bxs-x-circle close_search'></i>
+      </div>
+    </div>
+    <!---==== Search Open: End ====--->
+    
+    <!---==== Principal: Start ====--->
+    <main class="main">
+      <div class="title_principal">
+        <h2>Stays in Finland</h2>
+        <p>+12 stays</p>
+      </div>
+
+      <div class="city">
+          <div class="helsinki">
+            <div class="container">
+              <!---==== Item 1: Start ====--->
+              <div class="item">
+                <img src="recursos/photo1.jpg">
+                <div class="hover">
+                     <div class="hover_content">
+                        <p><span>City</span>: Helsinki</p>
+                        <p><span>Country</span>: Finland</p>
+                        <p><span>Max Guests</span>: 3</p>
+                        <p><span>Beds</span>: 2</p>
+                     </div>                 
+                </div>
+
+                <div class="stay_info">
+                   <span>
+                      <h6 class="superhost">SUPER HOST</h6>
+                      <p class="type">Entire apartment</p>
+                   </span>
+
+                   <span>
+                      <i class='bx bxs-star'></i>
+                      <span class="star">4.4</span>
+                   </span>
+                 </div>
+
+                 <p class="title">Stylist apartment in center of the city</p>
+              </div> 
+              <!---==== Item 1: End ====--->
+              
+              <!---==== Item 2: Start ====--->
+              <div class="item">
+                <img src="recursos/photo2.jpg">
+                <div class="hover">
+                     <div class="hover_content">
+                        <p><span>City</span>: Vaasa</p>
+                        <p><span>Country</span>: Finland</p>
+                        <p><span>Max Guests</span>: 5</p>
+                        <p><span>Beds</span>: 2</p>
+                     </div>                 
+                </div>
+
+                <div class="stay_info">
+                   <span>
+                      <h6 class="superhost true">SUPER HOST</h6>
+                      <p class="type">Entire apartment</p>
+                   </span>
+
+                   <span>
+                      <i class='bx bxs-star'></i>
+                      <span class="star">4.2</span>
+                   </span>
+                 </div>
+
+                 <p class="title">Nice apartment in center of Helsinki</p>
+              </div>
+              <!---==== Item 2: End ====---> 
+              
+              <!---==== Item 3: Start ====--->
+              <div class="item">
+                <img src="recursos/photo3.jpg">
+                <div class="hover">
+                    <div class="hover_content">
+                        <p><span>City</span>: Turku</p>
+                        <p><span>Country</span>: Finland</p>
+                        <p><span>Max Guests</span>: 2</p>
+                        <p><span>Beds</span>: 1</p>
+                    </div>                 
+                </div>
+
+                <div class="stay_info">
+                   <span>
+                      <h6 class="superhost">SUPER HOST</h6>
+                      <p class="type">Entire house</p>
+                   </span>
+
+                   <span>
+                      <i class='bx bxs-star'></i>
+                      <span class="star">4.5</span>
+                   </span>
+                 </div>
+
+                 <p class="title">Arty interior in 1900 wooden house</p>
+              </div>
+              <!---==== Item 3: End ====---> 
+              
+              <!---==== Item 4: Start ====--->
+              <div class="item">
+                <img src="recursos/photo4.jpg">
+                <div class="hover">
+                    <div class="hover_content">
+                        <p><span>City</span>: Helsinki</p>
+                        <p><span>Country</span>: Finland</p>
+                        <p><span>Max Guests</span>: 4</p>
+                        <p><span>Beds</span>: 2</p>
+                    </div>                 
+                </div>
+
+                <div class="stay_info">
+                   <span>
+                      <h6 class="superhost true">SUPER HOST</h6>
+                      <p class="type">Entire apartment</p>
+                   </span>
+
+                   <span>
+                      <i class='bx bxs-star'></i>
+                      <span class="star">4.4</span>
+                   </span>
+                 </div>
+
+                 <p class="title">Stylist apartment in center of the city</p>
+              </div> 
+              <!---==== Item 4: End ====--->
+              
+              <!---==== Item 5: Start ====--->
+              <div class="item">
+                <img src="recursos/photo5.jpg" class="img">
+                <div class="hover">
+                    <div class="hover_content">
+                        <p><span>City</span>: Oulu</p>
+                        <p><span>Country</span>: Finland</p>
+                        <p><span>Max Guests</span>: 4</p>
+                        <p><span>Beds</span>: 2</p>
+                    </div>                 
+                </div>
+
+                <div class="stay_info">
+                   <span>
+                      <h6 class="superhost">SUPER HOST</h6>
+                      <p class="type">Entire apartment</p>
+                   </span>
+
+                   <span>
+                      <i class='bx bxs-star'></i>
+                      <span class="star">4.48</span>
+                   </span>
+                 </div>
+
+                 <p class="title">Apartment next to market spuare</p>
+              </div> 
+              <!---==== Item 5: End ====--->
+
+              <!---==== Item 6: Start ====--->
+              <div class="item">
+                <img src="recursos/photo6.jpg">
+                <div class="hover">
+                    <div class="hover_content">
+                        <p><span>City</span>: Oulu</p>
+                        <p><span>Country</span>: Finland</p>
+                        <p><span>Max Guests</span>: 6</p>
+                        <p><span>Beds</span>: 6</p>
+                    </div>                 
+                </div>
+
+                <div class="stay_info">
+                   <span>
+                      <h6 class="superhost">SUPER HOST</h6>
+                      <p class="type">Entire house</p>
+                   </span>
+
+                   <span>
+                      <i class='bx bxs-star'></i>
+                      <span class="star">4.95</span>
+                   </span>
+                 </div>
+
+                 <p class="title">A cosy family house</p>
+              </div> 
+              <!---==== Item 6: End ====--->
+            </div>
+          </div>
+      </div>
+    </main>
+    <!---==== Principal: End ====--->
+<script src="script.js"></script>
+</body>
+</html>
